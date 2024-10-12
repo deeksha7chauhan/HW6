@@ -28,7 +28,7 @@ def get_next_day(date_str):
 def return_snowflake_conn():
 
     # Initialize the SnowflakeHook
-    hook = SnowflakeHook(snowflake_conn_id='snowflake_conn')
+    hook = SnowflakeHook(snowflake_conn_id='snowflake_connection_local')
     
     # Execute the query and fetch results
     conn = hook.get_conn()
